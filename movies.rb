@@ -13,8 +13,8 @@ end
 
 session = Neo4j::ActiveBase.current_session
 
-session.query('CREATE CONSTRAINT ON (m:Movie) ASSERT m.title IS UNIQUE')
-session.query('CREATE CONSTRAINT ON (p:Person) ASSERT p.name IS UNIQUE')
+# session.query('CREATE CONSTRAINT ON (m:Movie) ASSERT m.title IS UNIQUE')
+# session.query('CREATE CONSTRAINT ON (p:Person) ASSERT p.name IS UNIQUE')
 
 require './models'
 
